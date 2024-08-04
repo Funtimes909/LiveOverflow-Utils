@@ -1,9 +1,9 @@
 {
   "required": true,
-  "package": "com.example.addon.mixin",
+  "package": "xyz.funtimes909.liveoverflow_utils.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ExampleMixin"
+    "MovePacketMixin"
   ],
   "injectors": {
     "defaultRequire": 1

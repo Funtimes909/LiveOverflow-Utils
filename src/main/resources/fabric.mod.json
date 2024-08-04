@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
   "id": "addon-template",
-  "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "version": "0.1.0",
+  "name": "Anti Human Bypass",
+  "description": "Meteor Client addon to bypass LiveOverflows AntiHuman plugin",
   "authors": [
-    "seasnail"
+    "Funtimes909"
   ],
   "contact": {
     "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/liveoverflow_utils/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "xyz.funtimes909.liveoverflow_utils.LiveoverflowUtils"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "liveoverflow_utils.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
