@@ -3,7 +3,8 @@
   "package": "xyz.funtimes909.liveoverflow_utils.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "MovePacketMixin"
+    "MovePacketMixin",
+    "WorldBorderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -24,7 +24,8 @@ public class MovePacketMixin {
     @Final
     protected double x;
 
-    @Inject(at = @At("TAIL"), method = "<init>")
+    @Inject(at = @At("TAIL"), method = "<init>"
+    )
 
     private void onPlayerMoveC2SPacket(double x, double y, double z, float yaw, float pitch, boolean onGround, boolean changePosition, boolean changeLook, CallbackInfo ci) {
         if (!Modules.get().isActive(AntiHumanBypass.class)) {

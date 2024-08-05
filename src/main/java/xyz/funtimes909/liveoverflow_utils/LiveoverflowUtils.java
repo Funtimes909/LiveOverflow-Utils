@@ -1,8 +1,8 @@
 package xyz.funtimes909.liveoverflow_utils;
 
 import xyz.funtimes909.liveoverflow_utils.modules.AntiHumanBypass;
+import xyz.funtimes909.liveoverflow_utils.modules.WorldBorderBypass;
 import com.mojang.logging.LogUtils;
-import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.systems.hud.HudGroup;
 import meteordevelopment.meteorclient.systems.modules.Category;
@@ -16,10 +16,11 @@ public class LiveoverflowUtils extends MeteorAddon {
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Addon Template");
+        LOG.info("Starting LiveOverflow Addon");
 
         // Modules
         Modules.get().add(new AntiHumanBypass());
+        Modules.get().add(new WorldBorderBypass());
     }
 
     @Override
